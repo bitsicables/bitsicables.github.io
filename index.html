@@ -17,6 +17,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<!-- Instafeed -->
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
+	
+	
   </head>
   <body data-spy="scroll" data-target=".navbar">
 	<div class="container">
@@ -37,6 +42,7 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 			<li><a href="#services">Serveis</a></li>
+			<li><a href="#instagram">Instagram</a></li>
 			<li><a href="#contact">Contacta</a></li>
 			</ul>
 			</ul>
@@ -85,20 +91,37 @@
 				</h4>
 
 	  	</div>
+		
+		<div class="jumbotron container" id="instagram">
+		<p class="lead"><a style="white-space: nowrap" href="https://instagram.com/bitsicables"><i class='fab fa-instagram'></i> Instagram</a>
+		<br>
+		<div id="instafeed"></div>
+		</div>
+		
 	  	<div class="jumbotron container" id="contact">
 	  	  	<h4>
 				<p class="lead"> Contacteu amb nosaltres i resoldrem els vostres dubtes. 
 				<br>
 				<br>
-	  			<a style="white-space: nowrap" href="https://wa.me/34685136750"><i class='fab fa-whatsapp'></i> Whatsapp</a>&nbsp&nbsp&nbsp&nbsp<a style="white-space: nowrap" href="https://t.me/bitsicables"><i class='fab fa-telegram'></i> Telegram</a>&nbsp&nbsp&nbsp&nbsp<a style="white-space: nowrap" href="https://instagram.com/bitsicables"><i class='fab fa-instagram'></i> Instagram</a>
+	  			<a style="white-space: nowrap" href="https://wa.me/34685136750"><i class='fab fa-whatsapp'></i> Whatsapp</a>&nbsp&nbsp&nbsp&nbsp<a style="white-space: nowrap" href="https://t.me/bitsicables"><i class='fab fa-telegram'></i> Telegram</a>
 			</h4>
 		</div>
       </section>
     </div>
 
+    <script type="text/javascript">
+		var feed = new Instafeed({
+			get: 'user',
+			userId: '10879620465',
+			accessToken: '10879620465.ec076d2.48ccf6faa985486c80999b1518bb2942'
+		});
+		feed.run();
+    </script>
+      
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+      
   </body>
 </html>
