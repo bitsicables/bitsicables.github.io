@@ -19,13 +19,16 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+
+	<link rel="stylesheet" href="assets/css/site.css">
+
 </head>
 <body data-spy="scroll" data-target="#navbarSupportedContent">
 
 <!-- Navbar -->
-<section class="container sticky-top">
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<section class="container-fluid sticky-top bg-white p-0">
 
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<a class="navbar-brand" href="#home">Bitsicables</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,33 +42,73 @@
 				<li class="nav-item"><a class="nav-link" href="#contact">Contacta</a></li>
 			</ul>
 		</div>
-
 	</nav>
+
+	<div class="row" id="logo">
+		<div class="col-12 text-center">
+			<img src="banner.svg" class="img-fluid">
+		</div>
+	</div>
+
 </section>
 <!-- /Navbar -->
 
 <!-- Questions -->
-<section class="container" id="questions">
+<section class="container-fluid bg-dark mb-4" id="questions">
 	<div class="row">
+		<div class="col">
+			<div id="header-carousel" class="carousel slide" data-ride="carousel">
 
-		<div class="col-12 text-center">
-			<img src="banner.svg" class="img-fluid">
-		</div>
+				<ol class="carousel-indicators">
+					<li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#header-carousel" data-slide-to="1"></li>
+					<li data-target="#header-carousel" data-slide-to="2"></li>
+					<li data-target="#header-carousel" data-slide-to="3"></li>
+				</ol>
 
-		<div class="col-12">
-			<div class="jumbotron">
-				<p class="lead">
-					• El teu ordinador va lent?
-					<br>
-					• Se't talla el Wi-Fi?
-					<br>
-					• T'ha entrat un virus?
-					<br>
-					• Vols ampliar el teu ordinador i no saps com?
-				</p>
+				<div class="carousel-inner">
+
+					<div class="carousel-item active text-center">
+						<img class="img-fluid" src="assets/img/438829617_270d9d661e_b.jpg" alt="slow connection" />
+						<div class="carousel-caption d-none d-md-block">
+							<h2>El teu ordinador va lent?</h2>
+						</div>
+					</div>
+
+					<div class="carousel-item text-center">
+						<img class="img-fluid" src="assets/img/3571973952_54bfd35129_b.jpg" alt="Wifi" />
+						<div class="carousel-caption d-none d-md-block">
+							<h2>Se't talla el Wi-Fi?</h2>
+						</div>
+					</div>
+
+					<div class="carousel-item text-center">
+						<img class="img-fluid" src="assets/img/5235874468_16612bc067_o.jpg" alt="Computer issues" />
+						<div class="carousel-caption d-none d-md-block">
+							<h2>T'ha entrat un virus?</h2>
+						</div>
+					</div>
+
+					<div class="carousel-item text-center">
+						<img class="img-fluid" src="assets/img/40470902665_ebb01bcd9c_b.jpg" alt="Soldiers on a computer" />
+						<div class="carousel-caption d-none d-md-block">
+							<h2>Vols ampliar el teu ordinador i no saps com?</h2>
+						</div>
+					</div>
+
+				</div>
+
+				<a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+
 			</div>
 		</div>
-
 	</div>
 </section>
 <!-- /Questions -->
@@ -85,24 +128,21 @@
 <!-- /Home -->
 
 <!-- Services -->
-<section class="container" id="services">
+<section class="container mb-4" id="services">
 	<div class="row">
 		<div class="col-12">
-			<div class="jumbotron">
-				<p class="lead">
-					Oferim aquests serveis:
-				</p>
-
-				<h4>
-					<ul class="list-group">
-						<li class="list-group-item">Millora del rendiment i velocitat del ordinador.</li>
-						<li class="list-group-item">Ampliacions de memòria, RAM, i disc dur.</li>
-						<li class="list-group-item">Solució de problemes del sistema operatiu (Windows, OSX i Linux).</li>
-						<li class="list-group-item">Neteja d'aparells informàtics (pols, canvi de pasta tèrmica...).</li>
-						<li class="list-group-item">Solució de problemes de connexió xarxes Wi-Fi i derivades.</li>
-						<li class="list-group-item">Muntatge i assesorament d'equips informàtics.</li>
-					</ul>
-				</h4>
+			<div class="card bg-dark text-white">
+				<div class="card-header text-center">
+					<h3 class="card-title">Oferim aquests serveis</h3>
+				</div>
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-action">Millora del rendiment i velocitat del ordinador.</li>
+					<li class="list-group-item list-group-item-action">Ampliacions de memòria, RAM, i disc dur.</li>
+					<li class="list-group-item list-group-item-action">Solució de problemes del sistema operatiu (Windows, OSX i Linux).</li>
+					<li class="list-group-item list-group-item-action">Neteja d'aparells informàtics (pols, canvi de pasta tèrmica...).</li>
+					<li class="list-group-item list-group-item-action">Solució de problemes de connexió xarxes Wi-Fi i derivades.</li>
+					<li class="list-group-item list-group-item-action">Muntatge i assesorament d'equips informàtics.</li>
+				</ul>
 			</div>
 		</div>
 	</div>
