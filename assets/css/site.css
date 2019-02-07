@@ -8,6 +8,10 @@ body { overflow-x: hidden; }
     margin: 0 auto;
 }
 
+#services .title {
+    font-size: 3em;
+}
+
 #services .card-deck .card {
     transition: transform .5s ease-out;
 }
