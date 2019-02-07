@@ -1,127 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bitsicables</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	
-	<!-- Instafeed -->
-	<script type="text/javascript" src="js/instafeed.min.js"></script>
-	
-	
-  </head>
-  <body data-spy="scroll" data-target=".navbar">
-	<div class="container">
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#home">Bitsicables</a>
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Bitsicables</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+	<link rel="stylesheet" href="assets/css/site.css">
+
+</head>
+<body data-spy="scroll" data-target="#navbarSupportedContent">
+
+<!-- Navbar -->
+<section class="container-fluid sticky-top bg-white p-0" id="header">
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<a class="navbar-brand" href="#home">Bitsicables</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="#services">Serveis</a></li>
+				<li class="nav-item"><a class="nav-link" href="#instagram">Instagram</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">Contacta</a></li>
+			</ul>
+		</div>
+	</nav>
+</section>
+<!-- /Navbar -->
+
+<!-- Logo -->
+<section class="container-fluid" id="logo">
+	<div class="row">
+		<div class="col-12 text-center">
+			<img src="banner.svg" class="img-fluid">
+		</div>
+	</div>
+</section>
+<!-- /Logo -->
+
+<!-- Questions -->
+<section class="container-fluid bg-dark mb-4" id="questions">
+	<div class="row">
+		<div class="col">
+			<div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+				<ol class="carousel-indicators">
+					<li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#header-carousel" data-slide-to="1"></li>
+					<li data-target="#header-carousel" data-slide-to="2"></li>
+					<li data-target="#header-carousel" data-slide-to="3"></li>
+				</ol>
+
+				<div class="carousel-inner">
+
+					<div class="carousel-item active text-center" data-interval="5000">
+						<img class="img-fluid" src="assets/img/438829617_270d9d661e_b.jpg" alt="slow connection" />
+						<div class="carousel-caption">
+							<h2>El teu ordinador va lent?</h2>
+						</div>
+					</div>
+
+					<div class="carousel-item text-center" data-interval="5000">
+						<img class="img-fluid" src="assets/img/3571973952_54bfd35129_b.jpg" alt="Wifi" />
+						<div class="carousel-caption">
+							<h2>Se't talla el Wi-Fi?</h2>
+						</div>
+					</div>
+
+					<div class="carousel-item text-center" data-interval="5000">
+						<img class="img-fluid" src="assets/img/5235874468_16612bc067_o.jpg" alt="Computer issues" />
+						<div class="carousel-caption">
+							<h2>T'ha entrat un virus?</h2>
+						</div>
+					</div>
+
+					<div class="carousel-item text-center" data-interval="5000">
+						<img class="img-fluid" src="assets/img/40470902665_ebb01bcd9c_b.jpg" alt="Soldiers on a computer" />
+						<div class="carousel-caption">
+							<h2>Vols ampliar el teu ordinador i no saps com?</h2>
+						</div>
+					</div>
+
+				</div>
+
+				<a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Questions -->
+
+<!-- Home -->
+<section class="container mb-4" id="home">
+	<div class="row">
+		<div class="col-12">
+			<div class="card bg-light">
+				<div class="card-body">
+
+					<p class="lead text-monospace text-center">
+						A Bitsicables trobareu solucions informàtiques a bon preu i amb garantia. Tenim àmplia experiència en sistemes Windows, Linux i OSX.
+					</p>
+
+					<h1 class="text-center">
+						<i class="fa-2x fab fa-windows"></i>
+						<i class="fa-2x fab fa-linux"></i>
+						<i class="fa-2x fab fa-apple"></i>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Home -->
+
+<!-- Services -->
+<section class="container-fluid bg-dark mb-4" id="services">
+	<div class="row">
+
+		<div class="col-12">
+			<h3 class="title text-white text-center pt-2 pb-2">Oferim aquests serveis</h3>
+		</div>
+
+		<div class="col-12">
+
+			<div class="card-deck mb-4">
+
+				<div class="card">
+					<img class="card-img-top" alt="rendiment" src="assets/img/166447190_d0bdcba035_o.jpg" alt="Crazy computer">
+					<div class="card-body">
+						Millora del rendiment i velocitat del ordinador.
+					</div>
+				</div>
+
+				<div class="card">
+					<img class="card-img-top" alt="rendiment" src="assets/img/14314325305_36fb36b2f8_z.jpg" alt="RAM">
+					<div class="card-body">
+						Ampliacions de memòria, RAM, i disc dur.
+					</div>
+				</div>
+
+				<div class="card">
+					<img class="card-img-top" alt="rendiment" src="assets/img/8755635674_4ba9c218f8_b.jpg" alt="Windows fault">
+					<div class="card-body">
+						Solució de problemes del sistema operatiu (Windows, OSX i Linux).
+					</div>
+				</div>
 			</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-			<li><a href="#services">Serveis</a></li>
-			<li><a href="#instagram">Instagram</a></li>
-			<li><a href="#contact">Contacta</a></li>
-			</ul>
-			</ul>
-			</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-      <section class="text-center">
-        <div class="container">
-          <img src="banner.svg" class="img-responsive center-block" >
-		  <br>
-        </div>
+			<div class="card-deck mb-4">
 
-        <div class="jumbotron container" id="questions">
-	  		<p class="lead">
-	  			• El teu ordinador va lent?
-	  			<br>
-	  			• Se't talla el Wi-Fi?
-	  			<br>
-	  			• T'ha entrat un virus?
-				<br>
-				• Vols ampliar el teu ordinador i no saps com?
-	  		</p>
-	  	</div>
+				<div class="card">
+					<img class="card-img-top" alt="rendiment" src="assets/img/fix-a-slow-computer-1024x683.jpeg" alt="Don't do nothing">
+					<div class="card-body">
+						Neteja d'aparells informàtics (pols, canvi de pasta tèrmica...).
+					</div>
+				</div>
 
-        <div class="jumbotron container" id="home">
-			<h1>
-			<i class="fab fa-windows"></i>&nbsp<i class="fab fa-linux"></i>&nbsp<i class="fab fa-apple"></i>
-			</h1>
-			<br>
-	  		<p class="lead">A Bitsicables trobareu solucions informàtiques a bon preu i amb garantia. Tenim àmplia experiència en sistemes Windows, Linux i OSX.</p>
-	  	</div>
-	  	<div class="jumbotron container" id="services">
-	  		<p class="lead">
-	  			Oferim aquests serveis:
-	  			<br>
+				<div class="card">
+					<img class="card-img-top" alt="rendiment" src="assets/img/2446450305_e7bfee4d5c_b.jpg" alt="Networks">
+					<div class="card-body">
+						Solució de problemes de connexió xarxes Wi-Fi i derivades.
+					</div>
+				</div>
 
-	  			<h4>
-	  			<ul class="list-group">
-				<li class="list-group-item">Millora del rendiment i velocitat del ordinador.</li>
-  				<li class="list-group-item">Ampliacions de memòria, RAM, i disc dur.</li>
-  				<li class="list-group-item">Solució de problemes del sistema operatiu (Windows, OSX i Linux).</li>
-  				<li class="list-group-item">Neteja d'aparells informàtics (pols, canvi de pasta tèrmica...).</li>
-  				<li class="list-group-item">Solució de problemes de connexió xarxes Wi-Fi i derivades.</li>
-  				<li class="list-group-item">Muntatge i assesorament d'equips informàtics.</li>
-				</ul>
-				</h4>
+				<div class="card">
+					<img class="card-img-top" alt="rendiment" src="assets/img/9393556134_db0f8da2dc_b.jpg" alt="Modding">
+					<div class="card-body">
+						Muntatge i assesorament d'equips informàtics.
+					</div>
+				</div>
 
-	  	</div>
-		
-		<div class="jumbotron container" id="instagram">
-		<p class="lead"><a style="white-space: nowrap" href="https://instagram.com/bitsicables"><i class='fab fa-instagram'></i> Instagram</a>
-		<br>
-		<div id="instafeed"></div>
+			</div>
+
 		</div>
-		
-	  	<div class="jumbotron container" id="contact">
-	  	  	<h4>
-				<p class="lead"> Som a Barcelona ciutat. Contacteu amb nosaltres i resoldrem els vostres dubtes. 
-				<br>
-				<br>
-	  			<a style="white-space: nowrap" href="https://wa.me/34685136750"><i class='fab fa-whatsapp'></i> Whatsapp</a>&nbsp&nbsp&nbsp&nbsp<a style="white-space: nowrap" href="https://t.me/bitsicables"><i class='fab fa-telegram'></i> Telegram</a>
-			</h4>
-		</div>
-      </section>
-    </div>
+	</div>
+</section>
+<!-- /Services -->
 
-    <script type="text/javascript">
-		var feed = new Instafeed({
-			get: 'user',
-			userId: '10879620465',
-			accessToken: '10879620465.ec076d2.48ccf6faa985486c80999b1518bb2942'
-		});
-		feed.run();
-    </script>
-      
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-      
-  </body>
+<!-- Instagram -->
+<section class="container mb-4" id="instagram">
+	<div class="row">
+		<div class="col-12">
+
+			<div class="card bg-light">
+
+				<div class="card-header">
+					<h4 class="card-title mb-0 text-center">
+						<a class="text-decoration-none"
+							 href="https://instagram.com/bitsicables"
+							 target="_blank">
+							<i class="fab fa-instagram"></i> Instagram
+						</a>
+					</h4>
+				</div>
+
+				<div class="card-body">
+					<div class="grid" id="instafeed"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Instagram -->
+
+<!-- Contact -->
+<footer class="container-fluid bg-dark pt-5" id="contact">
+	<div class="row">
+		<div class="col-12">
+			<h4 class="lead text-white text-center">Som a Barcelona ciutat. Contacteu amb nosaltres i resoldrem els vostres dubtes.</h4>
+			<p class="text-center">
+				<a href="https://wa.me/34685136750"><i class='fab fa-whatsapp'></i> Whatsapp</a>
+				<a href="https://t.me/bitsicables"><i class='fab fa-telegram'></i> Telegram</a>
+			</p>
+		</div>
+	</div>
+</footer>
+<!-- /Contact -->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+
+<script type="text/javascript">
+	var feed = new Instafeed({
+		get: 'user',
+		userId: '10879620465',
+		accessToken: '10879620465.ec076d2.48ccf6faa985486c80999b1518bb2942'
+	});
+	feed.run();
+</script>
+
+</body>
 </html>

@@ -1,0 +1,55 @@
+body { overflow-x: hidden; }
+
+#header { box-shadow: 0 4px 2px; }
+
+#questions .carousel-caption {
+    background-color: rgba(50,50,50,.5);
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#questions .carousel-inner img {
+    height: 50vh;
+    max-width: initial !important;
+}
+
+#home .card {
+    box-shadow: 4px 4px 2px;
+}
+
+#services .title {
+    font-size: 3em;
+}
+
+#services .card-deck .card {
+    transition: transform .5s ease-out, box-shadow .5s ease-out;
+    box-shadow: 4px 5px 2px;
+}
+#services .card-deck .card:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 12px 2px;
+}
+
+#instagram .card {
+    box-shadow: 4px 4px 2px;
+}
+
+
+#instagram .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: row dense;
+}
+#instagram .grid a {
+    grid-row-end: span 1;
+    text-align: center;
+}
+
+#instagram .grid a img{
+    max-width: 100%;
+    height: auto;
+}
