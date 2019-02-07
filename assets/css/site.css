@@ -8,6 +8,10 @@ body { overflow-x: hidden; }
     margin: 0 auto;
 }
 
+#home .card {
+    box-shadow: 4px 4px 2px;
+}
+
 #services .title {
     font-size: 3em;
 }
@@ -19,6 +23,10 @@ body { overflow-x: hidden; }
 #services .card-deck .card:hover {
     transform: scale(1.05);
     box-shadow: 12px 12px 2px;
+}
+
+#instagram .card {
+    box-shadow: 4px 4px 2px;
 }
 
 
