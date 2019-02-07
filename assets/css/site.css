@@ -8,6 +8,10 @@ body { overflow-x: hidden; }
     margin: 0 auto;
 }
 
+#questions .carousel-inner img {
+    height: 50vh;
+}
+
 #home .card {
     box-shadow: 4px 4px 2px;
 }
