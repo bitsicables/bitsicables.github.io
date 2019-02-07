@@ -1,5 +1,7 @@
 body { overflow-x: hidden; }
 
+#header { box-shadow: 0 4px 2px; }
+
 #questions .carousel-caption {
     background-color: rgba(50,50,50,.5);
     width: 80%;
