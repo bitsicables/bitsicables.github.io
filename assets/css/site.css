@@ -10,6 +10,7 @@ body { overflow-x: hidden; }
 
 #questions .carousel-inner img {
     height: 50vh;
+    max-width: initial !important;
 }
 
 #home .card {
