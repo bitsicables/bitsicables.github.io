@@ -13,8 +13,10 @@ body { overflow-x: hidden; }
 }
 
 #services .card-deck .card {
-    transition: transform .5s ease-out;
+    transition: transform .5s ease-out, box-shadow .5s ease-out;
+    box-shadow: 4px 5px 2px;
 }
 #services .card-deck .card:hover {
     transform: scale(1.05);
+    box-shadow: 12px 12px 2px;
 }
