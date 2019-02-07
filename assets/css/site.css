@@ -1,4 +1,4 @@
-
+body { overflow-x: hidden; }
 
 #questions .carousel-caption.d-none.d-md-block {
     background-color: rgba(50,50,50,.5);
