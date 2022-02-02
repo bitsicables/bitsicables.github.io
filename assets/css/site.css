@@ -19,6 +19,18 @@ body { overflow-x: hidden; }
     box-shadow: 4px 4px 2px;
 }
 
+#fast-contact .contact-card {
+    box-shadow: 4px 4px 2px;
+    transition: transform .5s ease-out, box-shadow .5s ease-out;
+}
+
+#fast-contact .contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 12px 2px;
+}
+
+#fast-contact .contact-card h4 { font-size: 3em; }
+
 #services .title {
     font-size: 3em;
 }
